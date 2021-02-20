@@ -1,0 +1,167 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 500 !important;
+    background-color: black !important;
+}
+
+.movie {
+    background-color: rgb(100, 100, 100);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    height: 30rem;
+}
+
+.btn-danger{
+    font-weight: bold;
+    color: black;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.modal-backdrop {
+    display: none;
+    z-index: 1040 !important;
+}
+
+.modal-content {
+    background-color: gray;
+    border: none;
+    margin: 2px auto;
+    z-index: 1100 !important;
+    color: white;
+}
+
+.modal-header {
+    border: none !important;
+}
+
+.modal-footer {
+    border: none !important;
+}
+
+.main, .research-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #e50914;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.modal-content h2 {
+    font-size: 40px;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(200, 200, 200);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+}
+
+h6 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#recherche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popularMovies, #topRatedMovies {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3rem;
+}
+
+.title-section {
+    align-self: flex-start;
+    margin-left: 14%;
+}
+
+#sub {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+#hero {
+    height: 74vh;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+#film-netflix {
+    font-size:30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.bouton-hero {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+#intro {
+    height: 6vh;
+}
+
+.nav {
+    cursor: pointer;
+}
+
+#navbarSupportedContent > ul > li > a {
+    color: gray;
+}
+#navbarSupportedContent > ul > li > a:hover:not(.nohover) {
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    #menu1, #menu2 {
+        display: none !important;
+    }
+}
